@@ -1,6 +1,5 @@
 module.exports = {
   migrations_directory: "./migrations",
-  solc: { optimizer: { enabled: true, runs: 200 } },
   networks: {
     development: {
       host: "localhost",
