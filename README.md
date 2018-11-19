@@ -1,14 +1,8 @@
-# TodoList Dapp
-
-## Live demo
-
-![ethereum-todolist-demo](https://cloud.githubusercontent.com/assets/8942633/24293643/108c3a9c-1093-11e7-9cee-8f162145eb89.gif)
+# Supply Chain Dapp
 
 ## Goal
 
-While a TodoList app is not suited to ethereum-based backends, I originally wanted to do one to get my hands on this technology and to have a very simple app actually doing something I am familiar with as a front-end developper.
-
-The goal of this sample app is to help anyone wanting to understand what are ethereum contracts and how they can be used as a distributed back-ends, with its limitations as well.
+To provide a secured and public access to all the transactions over blockchain network. Implementation of a supply chain management smart contract deployed on a test blockchain running on a local network. 
 
 ## Required dependencies
 
