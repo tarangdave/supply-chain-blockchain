@@ -1,20 +1,70 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <title>Supply Chain DApp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .header-title{
+        font-size: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #ead7d7;
+    }
+    .input-class{
+        border-radius: 5px;
+        width: 100%;
+        height: 37px;
+        color: #353535;
+        box-shadow: none;
+        border-style: none;
+        border: 1px solid;
+        padding: 10px;
+    }
+    .button-class{
+        width: 100%;
+        height: 50px;
+        border-radius: 5px;
+        background-color: #353535;
+        color: #fff;
+        border: none;
+    }
+    .all-status{
+        position: absolute;
+        float: right;
+    }
+    </style>
+</head>
 <body>
-    <h1>FoodSafe</h1>
+    <div class="container">
+        <h1 class="header-title">Supply Chain DApp</h1>
+    </div>
+    <div class="container">
+        <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
+            <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                <br> <label for="contractAddress">Consignment/Tracking ID:</label> <input class="input-class" type="text" id="contractAddress" placeholder="Scan address or create a new contract"></input>
+                <br> <label for="locationId">Location Id:</label> <input class="input-class" type="text" id="locationId" placeholder="Enter the ID of the location"></input>
+                <br> <label for="locationName">Location Name:</label> <input class="input-class" type="text" id="locationName" placeholder="Location name"></input>
+                <br> <label for="secret">Secret:</label> <input type="text" class="input-class" id="secret" placeholder="Enter secret"></input>
+                <br> <label for="passPhrase">Passphrase:</label> <input type="text" class="input-class" id="passPhrase" placeholder="Enter or scan passphrase"></input>
+            </div>
+            <div class="col-sm-6 col-xs-12 col-md-6 col-lg-6" style="margin-top: 58px;">
+                <button class="button-class" id="createContract" onclick="App.createContract()">Create New Contract</button>
+                <br> <br>
+                <button class="button-class" id="addNewLocation" onclick="App.addNewLocation()">Add New Location</button>
+                <br> <br>
+                <button class="button-class" id="getCurrentLocation" onclick="App.getCurrentLocation()">Get the current Location</button>
+                <br> <br>
+                <button class="button-class" id="getCurrentLocation" onclick="App.resetInput()">Reset</button>
+            </div>
+        </div>
+    </div>
 
-    <br> <label for="contractAddress">Contract Address:</label> <input type="text" id="contractAddress" placeholder="Scan address or create a new contract"></input>
-    <br> <label for="locationId">Location Id:</label> <input type="text" id="locationId" placeholder="Enter the ID of the location"></input>
-    <br> <label for="locationName">Location Name:</label> <input type="text" id="locationName" placeholder="Location name"></input>
-    <br> <label for="secret">Secret:</label> <input type="text" id="secret" placeholder="Enter secret"></input>
-    <br> <label for="passPhrase">Passphrase:</label> <input type="text" id="passPhrase" placeholder="Enter or scan passphrase"></input>
-
     <br> <br>
-    <button id="createContract" onclick="App.createContract()">Create New Contract</button>
-    <br> <br>
-    <button id="addNewLocation" onclick="App.addNewLocation()">Add New Location</button>
-    <br> <br>
-    <button id="getCurrentLocation" onclick="App.getCurrentLocation()">Get the current Location</button>
+    
 
 </body>
 </html>

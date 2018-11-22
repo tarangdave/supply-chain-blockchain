@@ -53,6 +53,10 @@ window.App= {
         var encryptedSecret = CryptoJS.AES.encrypt(locationSecret,passPhrase).toString();
         var deployedFoodSafe = new web3.eth.Contract(foodSafeABI, contractAddress, {from:account,  gas: 3000000});
         deployedFoodSafe.methods.AddNewLocation(locationId, locationName, encryptedSecret).send({from: account})
+        document.getElementById("locationId").value = ""
+        document.getElementById("locationName").value = ""
+        document.getElementById("secret").value = ""
+        document.getElementById("passPhrase").value = ""
     },
     getCurrentLocation: function()
     {
@@ -68,8 +72,14 @@ window.App= {
             document.getElementById("secret").value=decryptedSecret;
             })
         })
-        
 
+    },
+    resetInput: function(){
+        document.getElementById("contractAddress").value = ""
+        document.getElementById("locationId").value = ""
+        document.getElementById("locationName").value = ""
+        document.getElementById("secret").value = ""
+        document.getElementById("passPhrase").value = ""
     }
 }
 
