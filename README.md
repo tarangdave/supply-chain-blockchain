@@ -12,9 +12,15 @@ You must run a node on your computer, whether its a real or virtual one. For dev
 
 #### Install instructions
 
-````testrpc --account="0x6a3c06f76976ac9305c8caabab215166c4ae7aa056f97461fced1f934bb477b3, 10000000000000000000"```
-```npm run start```
-```node server.js```
+```
+testrpc --account="0x6a3c06f76976ac9305c8caabab215166c4ae7aa056f97461fced1f934bb477b3, 10000000000000000000"
+```
+```
+npm run start
+```
+```
+node server.js
+```
 
 ##### Mac & Linux
 
