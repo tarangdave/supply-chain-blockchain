@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
     <style>
     .header-title{
         font-size: 80px;
@@ -45,20 +46,21 @@
     <div class="container">
         <div class="col-md-12 col-xs-12 col-sm-12 col-lg-12">
             <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
+                <br> <label for="timestamp">Timestamp</label> <h4 id="time-display">NA</h4>
                 <br> <label for="contractAddress">Consignment/Tracking ID:</label> <input class="input-class" type="text" id="contractAddress" placeholder="Scan address or create a new contract"></input>
                 <br> <label for="locationId">Location Id:</label> <input class="input-class" type="text" id="locationId" placeholder="Enter the ID of the location"></input>
                 <br> <label for="locationName">Location Name:</label> <input class="input-class" type="text" id="locationName" placeholder="Location name"></input>
                 <br> <label for="secret">Secret:</label> <input type="text" class="input-class" id="secret" placeholder="Enter secret"></input>
                 <br> <label for="passPhrase">Passphrase:</label> <input type="text" class="input-class" id="passPhrase" placeholder="Enter or scan passphrase"></input>
             </div>
-            <div class="col-sm-6 col-xs-12 col-md-6 col-lg-6" style="margin-top: 58px;">
+            <div class="col-sm-6 col-xs-12 col-md-6 col-lg-6" style="margin-top: 111px;">
                 <button class="button-class" id="createContract" onclick="App.createContract()">Create New Contract</button>
                 <br> <br>
                 <button class="button-class" id="addNewLocation" onclick="App.addNewLocation()">Add New Location</button>
                 <br> <br>
                 <button class="button-class" id="getCurrentLocation" onclick="App.getCurrentLocation()">Get the current Location</button>
                 <br> <br>
-                <button class="button-class" id="getCurrentLocation" onclick="App.resetInput()">Reset</button>
+                <button class="button-class" id="reset" onclick="App.resetInput()">Reset</button>
             </div>
         </div>
     </div>

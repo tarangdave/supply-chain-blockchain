@@ -67,6 +67,8 @@ window.App= {
             deployedFoodSafe.methods.GetLocation(trailCount-1).call().then(function (returnValues){
             document.getElementById("locationId").value= returnValues[1];
             document.getElementById("locationName").value = returnValues[0];
+            var myDate = new Date(returnValues[3]*1000);
+            document.getElementById("time-display").innerHTML = myDate.toLocaleString();
             var encryptedSecret = returnValues[4];
             var decryptedSecret = CryptoJS.AES.decrypt(encryptedSecret, passPhrase).toString(CryptoJS.enc.Utf8);
             document.getElementById("secret").value=decryptedSecret;
@@ -80,6 +82,7 @@ window.App= {
         document.getElementById("locationName").value = ""
         document.getElementById("secret").value = ""
         document.getElementById("passPhrase").value = ""
+        document.getElementById("time-display").innerHTML = "NA"
     }
 }
 
