@@ -11,22 +11,21 @@ To provide a secured and public access to all the transactions over blockchain n
 You must run a node on your computer, whether its a real or virtual one. For development speed reasons, the best choice is to use testrpc because you have as much ether as you want and don't need to mine transactions.
 
 #### Install instructions
+Install following packages to get started -
+- Install ```MetaMask 3.5.2``` Chrome Extension. [Github Releases](https://github.com/MetaMask/metamask-extension/releases)
+- Install Node JS. [NodeJS](https://nodejs.org/en/)
+- ```npm install -g node-gyp```
+- ```npm install -g ethereum-testrpc```
+- ```npm install -g truffle```
+- ```npm install express@4.16.4```
+- ```npm install cors@2.8.4```
+- ```npm install fs@0.0.1-security```
+- ```npm install path@0.12.7```
+- ```npm install solc@0.4.25```
 
-```
-testrpc --account="0x6a3c06f76976ac9305c8caabab215166c4ae7aa056f97461fced1f934bb477b3, 10000000000000000000"
-```
-```
-npm run start
-```
-```
-node server.js
-```
-
-##### Mac & Linux
-
-```js
-sudo npm install -g ethereumjs-testrpc
-```
+- ```testrpc --account="0x6a3c06f76976ac9305c8caabab215166c4ae7aa056f97461fced1f934bb477b3, 10000000000000000000"```
+- ```npm run start```
+- ```node server.js```
 
 ##### Windows
 
