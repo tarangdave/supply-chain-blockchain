@@ -77,8 +77,6 @@ npm install
 - ```personal.newAccount("pass")```
 - ```personal.unlockAccount("ACCOUNT_ADDRESS", "pass")```
 
-**Note 2:** If you need to customize the geth parameters, check the "geth" task in gulpfile.js.
-
 ### Deploy the smart contracts to the node
 
 In another terminal, run ```truffle compile``` and then ```truffle migrate --reset```
