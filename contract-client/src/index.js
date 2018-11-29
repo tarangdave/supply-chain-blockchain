@@ -82,7 +82,7 @@ window.App= {
         document.getElementById("locationName").value = ""
         document.getElementById("secret").value = ""
         document.getElementById("passPhrase").value = ""
-        document.getElementById("time-display").innerHTML = "NA"
+        document.getElementById("time-display").innerHTML = ""
     }
 }
 
