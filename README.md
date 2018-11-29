@@ -23,10 +23,6 @@ Install following packages to get started -
 - ```npm install path@0.12.7```
 - ```npm install solc@0.4.25```
 
-- ```testrpc --account="0x6a3c06f76976ac9305c8caabab215166c4ae7aa056f97461fced1f934bb477b3, 10000000000000000000"```
-- ```npm run start```
-- ```node server.js```
-
 ##### Windows
 
 [The ethereumjs-testrpc package needs much more things to be installed on your machine to work on Windows.](https://github.com/ethereumjs/testrpc/wiki/Installing-TestRPC-on-Windows)
@@ -63,7 +59,9 @@ npm install
 
 #### With testrpc
 
-In a terminal (or in vagrant ssh on Windows, see above), run ```testrpc```
+- ```testrpc --account="0x....., 10000000000000000000"```
+- ```truffle compile``` and ```node server.js``` from contract-server dir
+> Visit http://localhost:3000 to view the compiled smart contract.
 
 #### With Geth
 
@@ -92,9 +90,10 @@ In another terminal, run ```truffle compile``` and then ```truffle migrate --res
 
 ### Running the client app
 
-With your node running and the smart contracts deployed to it, run in terminal ```npm start```.
+With your node running and the smart contracts deployed to it, run in terminal ```npm run start``` from contract-client dir.
 
 You're done !
+> Visit http://localhost:8080 to interact with web application.
 
 ## FAQ
 
@@ -102,10 +101,7 @@ You're done !
 
     Truffle requires the truffle.js file be named truffle-config on Windows machines. Feel free to delete the file that doesn't correspond to your platform.
 
-* __Where is my production build?__
 
-    The production build will be in the build_webpack folder. This is because Truffle outputs contract compilations to the build folder.
+* __How can I create app with react and truffle?__
 
-* __Where can I find more documentation?__
-
-    This project has been created with [truffle-box-react](https://github.com/truffle-box/truffle-box-react/) which is a marriage of [Truffle](http://truffleframework.com/) and a React setup created with [create-react-app](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md). Either one would be a great place to start!
+    You can recreate this project with [truffle-box-react](https://github.com/truffle-box/truffle-box-react/) which is a marriage of [Truffle](http://truffleframework.com/) and a React setup created with [create-react-app](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md). Either one would be a great place to start!
