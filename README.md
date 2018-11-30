@@ -59,7 +59,7 @@ npm install
 
 #### With testrpc
 
-- ```testrpc --account="0x....., 10000000000000000000"```
+- ```testrpc --account="0x....., 10000000000000000000"``` you can get account address from MetaMask Extenstion
 - ```truffle compile``` and ```node server.js``` from contract-server dir
 > Visit http://localhost:3000 to view the compiled smart contract.
 
